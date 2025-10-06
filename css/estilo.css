@@ -1,0 +1,166 @@
+/* FONTES E RESET */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #111111;
+}
+
+/* ESTRUTURA GERAL */
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #000428, #004e92);
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #a64aff;
+}
+
+/* MENU */
+nav {
+    background-color: #111;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a64aff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* SEÇÕES */
+section {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#home {
+    text-align: center;
+}
+
+.img-principal {
+    width: 90%;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.galeria-intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.galeria-intro figure {
+    width: 300px;
+}
+
+.galeria-intro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.galeria-intro figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* GALERIA DE NOTÍCIAS */
+.galeria-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #00aaff;
+    margin-top: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #222222;
+}
+
+/* VOLTAR AO TOPO */
+.voltar-topo {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #a64aff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar-topo:hover {
+    color: #00aaff;
+}
+
+/* RODAPÉ */
+footer {
+    background: #000;
+    color: #999;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem;
+    }
+
+    .galeria-noticias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria-intro {
+        flex-direction: column;
+    }
+}
